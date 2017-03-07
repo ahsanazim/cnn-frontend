@@ -2,7 +2,7 @@ import React from 'react';
 
 
 // function based "dumb" component with no state
-const Welcome = () => {
+const Home = () => {
   return (
     <div>
       react+react-router+webpack+babel+eslint starter
@@ -11,4 +11,4 @@ const Welcome = () => {
 };
 
 
-export default Welcome;
+export default Home;
