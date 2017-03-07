@@ -1,1 +1,1 @@
-# js-starter with react react-router babel sass and eslint
+# Classify DNA Sequences with our Convolutional Neural Network Architecture
