@@ -5,7 +5,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      react+react-router+webpack+babel+eslint starter
+      DNA Sequence classification with CNNs
     </div>
   );
 };
