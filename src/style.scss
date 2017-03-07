@@ -19,6 +19,10 @@ html, body, #main {
 
 #createBar{
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
   * {
     padding: 2px 6px;
   }
@@ -36,16 +40,15 @@ html, body, #main {
     transition: box-shadow 0.3s;
   }
   button {
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px;
+    font-family: 'Lato', sans-serif;
     margin-left: 10px;
     font-size: 20px;
     border: none;
     background-color: white;
     text-transform: lowercase;
     color: 	#0077BE;
-    max-height: 38px;
-    vertical-align: bottom;
+    min-height: 38px;       // to ensure equal heights --> there should be a flexbox sol though??
+    text-align: center;
   }
   button:hover {
     background-color: transparent;

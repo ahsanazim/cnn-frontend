@@ -20,7 +20,7 @@ class Home extends Component {
     return (
       <div id="createBar">
         <input onChange={this.onInputChange} value={this.state.seq} placeholder={"Paste your sequence here"} />
-        <button onClick={() => alert('you clicked!')}>Classify</button>
+        <button onClick={() => alert('you clicked!')}><span>classify</span></button>
       </div>
     );
   }
