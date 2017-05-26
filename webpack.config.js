@@ -11,11 +11,20 @@ module.exports = {
     publicPath: 'build/',
     filename: 'bundle.js',
   },
+  node: {
+    fs: 'empty',
+    tls: 'empty',
+    net: 'empty',
+  },
   module: {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'babel'
+      loader: 'babel',
+    },
+    {
+      test: /\.json$/,
+      loader: 'json-loader',
     },
     {
       test: /\.scss/,

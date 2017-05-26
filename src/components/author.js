@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import QueryBox from './query-box.js';
+import { status } from '../api/author.js';
 
 export default class Author extends Component {
   constructor(props) {
@@ -9,6 +10,13 @@ export default class Author extends Component {
     };
   }
 
+  authorStatus = (id) => {
+    status(id)
+      .then((infoStr) => {
+        alert(infoStr);
+      });
+  };
+
   render() {
     if (!this.state.logged) {
       return (
@@ -16,7 +24,7 @@ export default class Author extends Component {
           <h2 className="headline">Perform an Action or Log In</h2>
           <div className="queryBoxesCont">
             <QueryBox title="register" action={() => { alert('hallo'); }} />
-            <QueryBox title="login" />
+            <QueryBox title="login" action={this.authorStatus} />
           </div>
         </div>
       );
