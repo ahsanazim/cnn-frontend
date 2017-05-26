@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 // example class based component (smart component)
 class App extends Component {
@@ -11,9 +12,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="AppContainer">
+      <MuiThemeProvider>
         {this.props.children}
-      </div>
+      </MuiThemeProvider>
     );
   }
 }
